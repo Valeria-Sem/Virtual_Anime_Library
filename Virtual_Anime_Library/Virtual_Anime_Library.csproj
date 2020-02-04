@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C3F0844-7176-4FB6-A2CF-0C0AACF2ED07}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Virtual_Anime_Library</RootNamespace>
+    <AssemblyName>Virtual_Anime_Library</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnimeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnimeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnimeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimeDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PasswordDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ВБАDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ВБАDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="AnimeDataSet.xsc">
+      <DependentUpon>AnimeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnimeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnimeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnimeDataSet.xss">
+      <DependentUpon>AnimeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnimeDataSet1.xsc">
+      <DependentUpon>AnimeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AnimeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnimeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnimeDataSet1.xss">
+      <DependentUpon>AnimeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AnimeDataSet2.xsc">
+      <DependentUpon>AnimeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AnimeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnimeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnimeDataSet2.xss">
+      <DependentUpon>AnimeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AnimeDataSet3.xsc">
+      <DependentUpon>AnimeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AnimeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnimeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnimeDataSet3.xss">
+      <DependentUpon>AnimeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PasswordDataSet.xsc">
+      <DependentUpon>PasswordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PasswordDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PasswordDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PasswordDataSet.xss">
+      <DependentUpon>PasswordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ВБАDataSet.xsc">
+      <DependentUpon>ВБАDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ВБАDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ВБАDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ВБАDataSet.xss">
+      <DependentUpon>ВБАDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
